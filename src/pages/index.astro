@@ -3,6 +3,8 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+
+import logoUrl from '../../assets/teampics/teampic24.jpg?url';
 ---
 
 <!doctype html>
@@ -13,11 +15,12 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 	<body>
 		<Header />
 		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
+			<img src={logoUrl} alt="Site Logo" />
+			<h1>Hello Boggers!</h1>
 			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This
-				template serves as a lightweight, minimally-styled starting point for anyone looking to build
-				a personal website, blog, or portfolio with Astro.
+				Welcome to the official website of Memorial University's Concrete Toboggan Team!
+				We are a group of students who are passionate about engineering and design.
+				We are proud to represent Memorial University in the annual Great Northern Concrete Toboggan Race!
 			</p>
 			<p>
 				This template comes with a few integrations already configured in your
@@ -33,18 +36,17 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 				<li>Check out the included blog posts in <code>src/pages/blog/</code></li>
 				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
 			</ul>
-			<p>
-				Have fun! If you get stuck, remember to <a href="https://docs.astro.build/"
-					>read the docs
-				</a> or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out <a
-					href="https://github.com/Charca/astro-blog-template"
-					>astro-blog-template
-				</a> by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
 		</main>
 		<Footer />
 	</body>
 </html>
+
+<style>
+
+img {
+  width: 100%;
+  height: auto;
+  /* max-height: 200px; */
+}
+
+</style>
