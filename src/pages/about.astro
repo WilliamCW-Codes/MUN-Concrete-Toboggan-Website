@@ -1,14 +1,13 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
-
-// import logoUrl from '../../assets/teampics/teampic24.jpeg?url';
+import Layout from '../layouts/BlogPost.astro';
 ---
 
-<!doctype html>
-<html lang="en">
+<Layout
+	title="About Me"
+	description="yes"
+	pubDate={new Date('August 08 2021')}
+	heroImage="/blog-placeholder-about.jpg"
+>
 	<div style="text-align: center; border-bottom: 1px solid #000;">
 		<h1>What is MUN Concrete Toboggan?</h1>
 	</div>
@@ -67,15 +66,10 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 			slalom race and can compete in the ultimate King of the Hill tournament.
 		</p>
 	</div>
-</html>
+
+</Layout>
 
 <style>
-
-img {
-  width: 80%;
-  height: auto;
-  margin-bottom: 20px; /* Add 20px of space below the image */
-}
 
 details {
 	margin: 1em 0;
