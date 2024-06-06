@@ -8,8 +8,6 @@
 	--accent: #2337ff;
 	--accent-dark: #000d8a;
 	--black: 15, 18, 25;
-	--blackpure: #000000;
-	--white: #ffffff;
 	--gray: 96, 115, 159;
 	--gray-light: 229, 233, 240;
 	--gray-dark: 34, 41, 57;
@@ -36,7 +34,7 @@ body {
 	margin: 0;
 	padding: 0;
 	text-align: left;
-	background: var(--blackpure);
+	background: var(--black);
 	/* background: linear-gradient(var(--gray-gradient)) no-repeat; */
 	background-size: 100% 600px;
 	word-wrap: break-word;
