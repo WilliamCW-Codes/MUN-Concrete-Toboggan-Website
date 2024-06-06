@@ -2,7 +2,12 @@
 import Layout from '../layouts/BlogPost.astro';
 ---
 
-<main>
+<Layout
+	title="About Me"
+	description="yes"
+	pubDate={new Date('August 08 2021')}
+	heroImage="/blog-placeholder-about.jpg"
+>
 	<div style="text-align: center; border-bottom: 1px solid #000;">
 		<h1>What is MUN Concrete Toboggan?</h1>
 	</div>
@@ -34,4 +39,5 @@ import Layout from '../layouts/BlogPost.astro';
 			slalom race and can compete in the ultimate King of the Hill tournament.
 		</p>
 	</div>
-</main>
+
+</Layout>
