@@ -41,7 +41,7 @@ body {
 	background-size: 100% 600px;
 	word-wrap: break-word;
 	overflow-wrap: break-word;
-	color: rgb(var(--white));
+	color: rgb(var(--gray-light));
 	font-size: 20px;
 	line-height: 1.7;
 }
