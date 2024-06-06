@@ -41,6 +41,9 @@ body {
 	color: rgb(var(--gray-dark));
 	font-size: 20px;
 	line-height: 1.7;
+	width: 80vw; /* vw stands for viewport width */
+    max-width: 80vw; /* Ensure that the max-width is also 80% of the viewport width */
+    margin: auto;
 }
 main {
 	width: 80wv;
