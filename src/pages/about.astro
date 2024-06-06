@@ -23,9 +23,12 @@ import Layout from '../layouts/BlogPost.astro';
 		<h1>Sub-Teams</h1>
 	</div>
 	<div style="text-align: center">
-		<p>
-			yes
-		</p>
+		<details>
+			<summary>Sub-Teams</summary>
+			<p>
+				test
+			</p>
+		</details>
 	</div>
 	<div style="text-align: center; border-bottom: 1px solid #000;">
 		<h1>About the Competition</h1>
@@ -41,3 +44,16 @@ import Layout from '../layouts/BlogPost.astro';
 	</div>
 
 </Layout>
+
+<style>
+
+	details {
+		margin: 1em 0;
+		text-align: center;
+		border-bottom: 1px solid #000;
+	}
+	summary {
+		font-weight: bold;
+		cursor: pointer;
+	}
+	</style>
