@@ -34,8 +34,8 @@ body::before {
     position: absolute;
     top: 10%;
     left: 10%;
-    width: 100px;
-    height: 100px;
+    width: 800px;
+    height: 800px;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%; /* Makes the shape a circle */
     z-index: -1;
