@@ -29,6 +29,17 @@
 	font-style: normal;
 	font-display: swap;
 }
+body::before {
+    content: "";
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%; /* Makes the shape a circle */
+    z-index: -1;
+}
 body {
 	font-family: 'Atkinson', sans-serif;
 	margin: 0;
@@ -42,6 +53,16 @@ body {
 	color: rgb(var(--gray-light));
 	font-size: 20px;
 	line-height: 1.7;
+}
+body::after {
+    content: "";
+    position: absolute;
+    top: 20%;
+    right: 20%;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+    z-index: -1;
 }
 main {
 	width: 80vw;
