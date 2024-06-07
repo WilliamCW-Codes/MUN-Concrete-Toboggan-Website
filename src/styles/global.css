@@ -32,8 +32,8 @@
 body::before {
     content: "";
     position: absolute;
-    top: 10%;
-    left: 10%;
+    top: var(--circle-top);
+    left: var(--circle-left);
     width: 100px;
     height: 100px;
     background-color: rgb(255, 255, 255);
@@ -57,8 +57,8 @@ body {
 body::after {
     content: "";
     position: absolute;
-    top: 20%;
-    right: 20%;
+    top: var(--square-top);
+    right: var(--square-right);
     width: 100px;
     height: 100px;
     background-color: rgb(255, 255, 255);
